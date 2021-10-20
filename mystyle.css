@@ -1,0 +1,471 @@
+
+/*   LOGO   */
+.logo{
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 11%;
+  float: right;
+}
+
+/*   MENU   */
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 30px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #c6bda5
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #c6bda5;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.header{
+  background-image: url("Homepage images/homepagenew.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width:1000px;
+}
+
+.joinphoto{
+  background-image: url("Join/join.png");
+  background-repeat: no-repeat;
+  height:1000px;
+}
+/*   PHOTOS ALL PAGES   */
+
+.line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.line2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.related {
+  display: block;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr{
+  width: 130px;
+  background-color: #c6bda5;
+  height: 0.2px;
+  border: none;
+}
+
+/*  HOMEPAGE PHOTOS   */
+
+.homepage{
+width: 100%;
+height: 100%;
+padding-bottom: 100px;
+}
+
+
+/*   CONTENT 1 PHOTOS   */
+.ditteimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.folkestol {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*   CONTENT 2 PHOTOS  */
+.haytable{
+ display: block;
+  margin-right: auto;
+  height: 250px;
+  width: 350px;
+  padding-left: 120px;
+}
+
+.glasscombo{
+  padding-left: 120px;
+  padding-bottom: 50px;
+
+}
+
+.pinkjug{
+  padding-left: 790px;
+}
+
+/*   CONTENT 3 PHOTOS  */
+.finishedframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.gallery{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+
+/*   TEXT STYLING   */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+h6{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 9px;
+}
+
+h5{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+h4{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+
+h3{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h2{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 25px;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 50px;
+}
+
+h7{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+
+/*  HOMEPAGE STYLING  */
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    gap: 137px;
+    padding-left: 69px;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.homepage{
+  width: 100%;
+  height: 100%;
+}
+
+/*  CONTENT 2 STYLING  */
+
+/*  My first dinner party pics  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 500px;
+  grid-gap: 5px;
+  padding-left: 200px;
+}
+
+.grid-container > div {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  text-align: right;
+}
+
+/*  GET THE LOOK 1  */
+.flex-container5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 20px;
+  gap: 70px;
+}
+
+.flex-container6 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  padding-left: 100px;
+  padding-top: 10px;
+  line-height: 1.8;
+  gap: 240px;
+}
+
+/* Glass as deco pics  */
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-gap: 290px;
+  padding-left: 200px;
+}
+
+.grid-container2 > div {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+/* GET THE LOOK 2  */
+
+
+.flex-container7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 20px;
+  gap: 45px;
+}
+
+ .flex-container8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 10px;
+  line-height: 1.8;
+  gap: 290px;
+}
+ 
+
+/*  CONTENT 3 STYLING  */
+.flex-container1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      background-color: #c6bda5;
+      padding-top: 60px;
+      padding-bottom: 80px;
+      margin-left: 230px;
+      margin-right: 250px;
+    }
+
+
+.flex-container1 > div {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 12px;
+      width: 630px;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 25px;
+      background-color:white;
+      align-items: center;
+      }
+
+
+/*  FOOTER STYLING  */
+
+footer{
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #c6bda5;
+}
+  
+.container {
+  flex-direction: row;
+  gap: 20px;
+}
+  
+.socialmedia {
+  width: 14px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.join {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 990px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none; 
+  color: black;
+}
+
+a:link { 
+  text-decoration: none; 
+}
+
+
+a:visited { 
+  text-decoration: none; 
+}
+
+
+a:hover { 
+  text-decoration: none; 
+}
+
+
+a:active { 
+  text-decoration: none; 
+}
+
+
+
